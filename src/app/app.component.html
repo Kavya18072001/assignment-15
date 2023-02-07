@@ -1,0 +1,8 @@
+<div>
+  <input type="text"  #input>
+  <button (click)="onsubmit(input)">add</button>
+  <app-demo [value]="inputtext" *ngIf="destroy">
+    <h4>this is project content{{inputtext}}</h4>
+  </app-demo><br><br>
+  <button (click)="destroycomponent()">  destroy</button>
+</div>
